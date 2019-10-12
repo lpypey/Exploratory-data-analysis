@@ -291,13 +291,13 @@ server <- shinyServer(function(input, output, session) {
 
 
         })
-session$onSessionEnded(stopApp)
+
 })
 
 ```
 
 ```{r}
 shinyApp(ui = ui, server = server)
-stopApp()
+
 ```
 
